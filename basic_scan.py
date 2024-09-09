@@ -2,7 +2,7 @@ import nmap
 
 def scan_IP(ip):
     scanner = nmap.PortScanner()
-    scan_args = f'-sn -sS -p 1-1000'
+    scan_args = f'-sS -p 1-1000'
     
     if not ip:
         print("No IP address provided. Exiting")
